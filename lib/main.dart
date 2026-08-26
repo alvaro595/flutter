@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
-import 'pages/formpage.dart';
+import 'pages/main_page.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const CompanyProfilepp());
 }
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+
+class CompanyProfilepp extends StatelessWidget {
+  const CompanyProfilepp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Form Input Flutter',
+      title: "Perusahaan Maple",
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.red,),
-        primarySwatch: Colors.lightGreen,
+        primarySwatch: Colors.lightBlue,
       ),
-      home: const FormPage(),
+      home: const MainPage(),
     );
   }
 }
