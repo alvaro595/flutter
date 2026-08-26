@@ -3,6 +3,7 @@ import 'package:projectprofil/pages/galery.dart';
 import 'package:projectprofil/pages/kontak_page.dart';
 import 'package:projectprofil/pages/layanan_page.dart';
 import 'package:projectprofil/pages/portofolio_page.dart';
+import 'package:projectprofil/pages/testimoni.dart';
 
 import 'about_page.dart';
 
@@ -153,6 +154,25 @@ class MainPage extends StatelessWidget {
                       },
                       icon: const Icon(Icons.design_services),
                       label: const Text("Layanan Kami"),
+                    ),
+                  )
+                ),
+                SizedBox(height: 20),
+                SizedBox(
+                  width: double.infinity,
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 20
+                    ),
+                    child: ElevatedButton.icon(
+                      onPressed: (){
+                        Navigator.push(context,MaterialPageRoute(
+                          builder: (context)=>const TestimoniPage(),
+                        ),
+                        );
+                      },
+                      icon: const Icon(Icons.person_outline_sharp),
+                      label: const Text("Testimoni"),
                     ),
                   )
                 ),
